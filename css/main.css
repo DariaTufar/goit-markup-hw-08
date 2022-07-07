@@ -46,6 +46,29 @@ address {
   text-decoration: none;
 }
 
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  justify-content: center;
+  margin-right: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -59,15 +82,6 @@ section {
   border: none;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 body {
   font-family: var(--main-font-family);
   background-color: var(--primary-white-color);
@@ -75,9 +89,8 @@ body {
 }
 
 h1 {
+  font-family: var(--main-font-family);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -226,18 +239,58 @@ img {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 480px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .hero-title {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.615;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.615;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .btn-hero {
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.878;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -250,12 +303,28 @@ img {
 
 .hero-overlay {
   margin: 0 auto;
-  max-width: 1600px;
-  height: 600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 480px) {
+  .hero-overlay {
+    max-width: 480px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-overlay {
+    max-width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 /* ------------------------------НАШИ ПРЕИМУЩЕСТВА------------------- */

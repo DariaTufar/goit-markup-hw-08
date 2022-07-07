@@ -1,7 +1,12 @@
+
 @import "./utils/variables";
+@import "./base/mixin";
 @import "./base/reset";
+@import "./base/container";
+
 @import "./base/common";
 @import "./utils/visualli_hidden";
+
 
 @import "./structure/header";
 @import "./structure/hero_section";
