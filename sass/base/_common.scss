@@ -1,0 +1,48 @@
+// common styles //
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn {
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 4px;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    font-family: var(--main-font-family);
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
