@@ -1,9 +1,7 @@
 // common styles //
 section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    margin: 0 auto;
 }
-
 .btn {
     cursor: pointer;
     font-family: inherit;
@@ -24,19 +22,20 @@ h1 {
     font-family:  var(--main-font-family);
     font-weight: 900;
         
-     
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
 
-  
 }
 
 img {
     display: block;
+   
     max-width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
+
+    width: 100%;
 }
