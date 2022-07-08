@@ -418,6 +418,12 @@ img {
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .our-work {
+    display: none;
+  }
+}
+
 .our-work__title {
   margin-bottom: 50px;
   font-weight: 700;
