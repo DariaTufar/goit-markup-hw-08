@@ -13,9 +13,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    // @include micromobile {
-    //     max-width: 320px;
-    // }
     @include mobile {
         max-width: 480px;
     }
@@ -38,7 +35,7 @@
     flex-direction: column;
     flex-wrap:wrap;
     gap: 30px;
-    
+
     @include tablet{
         display: flex;
         flex-direction: row;
