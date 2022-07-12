@@ -1009,6 +1009,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer-contacts-join {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
   }
@@ -1130,15 +1131,30 @@ img {
   fill: var(--primary-white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer-top-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 61px;
+  }
+}
+
 .subscription {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .subscription {
+    padding-top: 60px;
+    padding-right: 74px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription {
     margin-left: 93px;
+    flex-direction: column;
   }
 }
 .subscription::placeholder {
