@@ -122,7 +122,11 @@ img {
 /*-------------------------- HEADER---------------- */
 .header {
   background-color: var(--primary-white-color);
-  border-bottom: var(--border-color-header);
+}
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: var(--border-color-header);
+  }
 }
 
 .main-nav {
@@ -137,14 +141,30 @@ img {
 }
 
 .nav__logo {
-  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__logo {
+    padding-right: 93px;
+    line-height: 1.19;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .nav__logo--blueblack {
@@ -152,13 +172,19 @@ img {
 }
 
 .menu {
-  display: none;
+  display: flex;
   align-items: center;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__item {
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
@@ -169,11 +195,24 @@ img {
 
 .menu__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .menu__link {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__link {
+    line-height: 1.19;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .menu__link:hover {
   color: var(--accent-color);
@@ -200,21 +239,71 @@ img {
   color: var(--accent-color);
 }
 
-.contact {
-  display: none;
-  justify-content: right;
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
+    justify-content: right;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 .contact__item {
-  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
   font-family: var(--main-font-family);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
-.contact__item + .contact__item {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .contact__item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__item {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item + .contact__item {
+    margin-left: 30px;
+  }
 }
 
 .contact__link {
@@ -234,6 +323,12 @@ img {
   margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .contact__icon {
+    width: 16px;
+    height: 16px;
+  }
+}
 .contact__link:hover .contact__icon {
   fill: var(--accent-color);
 }
@@ -252,6 +347,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 .mob-menu .container {
   display: flex;
@@ -279,31 +379,60 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transform: translate(-15px, 10px);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu__open-btn {
+    display: none;
+  }
+}
+.mob-menu__open-btn .container {
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
 }
 
-.mob-menu__wrap-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.mob-menu__open-icon {
+  z-index: 2;
+  fill: var(--title-text-color);
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu__open-icon {
+    display: none;
+  }
 }
 
 .mob-menu__close-btn {
-  display: flex;
+  display: block;
   align-items: center;
+  align-content: center;
   justify-content: center;
   position: absolute;
-  margin-left: auto;
-  margin-top: 10px;
+  top: 0px;
+  right: 0px;
+  transform: translate(-15px, 10px);
   width: 40px;
   height: 40px;
   cursor: pointer;
-  top: 10px;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  border: none;
+  background-color: none;
 }
-.mob-menu__close-btn :hover {
+
+.mob__close-icon {
+  width: 18.34px;
+  height: 18.34px;
+  fill: var(--title-text-color);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.mob-menu__close-btn:hover .mob__close-icon {
   fill: var(--accent-color);
 }
 
@@ -334,6 +463,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+@media screen and (max-width: 400px) {
+  .mob-menu__tel {
+    font-size: 24px;
+  }
+}
 
 .mob-menu__email {
   padding-top: 32px;
@@ -352,6 +486,13 @@ img {
   padding-top: 32px;
   align-items: flex-end;
 }
+@media screen and (max-width: 400px) {
+  .mob-soc__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .mob-soc__item {
   padding-right: 10px;
@@ -368,6 +509,11 @@ img {
   border-top: 0;
   border-bottom: 0;
   border-left: 0;
+}
+@media screen and (max-width: 400px) {
+  .mob-soc__item {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .mob-soc__link {
