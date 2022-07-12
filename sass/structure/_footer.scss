@@ -1,37 +1,63 @@
 
 //  -------------------ФУТЕР------------------- */
 .footer {
-    padding-bottom: 60px;
     background-color:  #2F303A;
+    padding-bottom: 60px;
     padding-top: 60px;
+    @include desktop {
+    
+    }
 }
 
 .footer-contacts-join{
+    display: block;
+
+    @include tablet {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    }
 }
 
 .footer-contact-wrap{ 
+ 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+    @include desktop {
     margin-right: 70px;
+}
 }
 
 .footer__logo {
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 700;
+    font-size: 24px;
+
+    @include desktop {
     font-size: 26px;
-    line-height: 1.19;
+    }
+
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color);
+    margin-bottom: 20px;
+    // margin-top: 20px;
 }
 
 .footer__logo-bluewhite{
     color: var(--primary-white-color);
 }
-
-.footer__contact-item { 
+ 
+.footer__contact-item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
     font-style: normal;
     line-height: 1.71;
     font-size: 14px;
@@ -65,15 +91,26 @@
     }
 }
 
-.join-us-title{
+.join-us__title{
     font-family: var(--main-font-family);
     font-weight: 700;
-    line-height: 16px;
+    font-size: 14px;
+
+    line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    padding-bottom: 20px;
 }
 
+.footer-join-us-wrap {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .company-soc__list{
     display: flex;
     margin-top: 20px;
@@ -104,8 +141,15 @@
 }
 
 .subscription{
-    margin-left: 93px;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
 
+    @include desktop { 
+        margin-left: 93px;
+        }
     &::placeholder{
         font-family: var(--main-font-family);
         font-style: normal;
@@ -123,23 +167,34 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-bottom: 20px;
+   
     color: var(--primary-white-color);
+
+    margin-bottom: 20px;
 }
 
 .subscription__form{
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center; 
+    @include desktop {
+        
     justify-content: flex-end;
+    }
 }
 
 .subscription__input{
     background-color: transparent;
     min-height: 50px;
     padding-left: 16px;
+    width: 450px;
+    @include desktop { 
     width: 358px;
+    }
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -151,6 +206,8 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+
+    margin-bottom: 20px;
 }
 
 .subscription__btn{
