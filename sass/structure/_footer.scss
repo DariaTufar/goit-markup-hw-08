@@ -4,15 +4,20 @@
     display: flex;
     background-color:  #2F303A;
     padding-bottom: 60px;
+    flex-direction: column;
+    
     
     @include mobile {
         max-width: 480px;
     }
     @include tablet {
         max-width: 768px;
+        align-content: space-between;
     }
     @include desktop {
-        max-width: 1200px;
+        flex-direction: row;
+        max-width: 1600px;
+      
     }
 }
 
@@ -33,6 +38,10 @@
     flex-direction: column;
     align-content: center;
     align-items: center;
+    }
+    @include tablet {
+        
+        padding-left: 76px;
     }
 
     @include desktop {
@@ -124,13 +133,15 @@
         align-items: center; 
         padding-top: 60px;
         padding-bottom: 60px;
-        @include tablet{ 
-        margin-right: 89px;    
+    }
+    @include tablet{ 
+        padding-right: 89px;  
+        padding-top: 65px;  
         }
+// write  interval  tablet only padding right 89px
     @include desktop {
         padding-top: 72px;
-    }
-    
+        padding-right: 0;
     }
 }
 
@@ -168,7 +179,7 @@
     @include tablet { 
     display: flex;
     flex-direction: column;
-    padding-left: 61px;
+    // padding-left: 61px;
     }
     @include desktop {
         flex-direction: row;
