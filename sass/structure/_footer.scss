@@ -1,16 +1,19 @@
 
 //  -------------------ФУТЕР------------------- */
 .footer {
+    display: flex;
     background-color:  #2F303A;
     padding-bottom: 60px;
     
-    // @include tablet {
-    //     height: 2907px;
-    // }
-    // @include desktop {
-    //  height: 252px;
-
-    // }
+    @include mobile {
+        max-width: 480px;
+    }
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
 }
 
 .footer-contacts-join{
@@ -22,7 +25,6 @@
     align-items: baseline;
     justify-content: space-between;
     }
-   
 }
 
 .footer-contact-wrap{ 
@@ -81,7 +83,7 @@
 
     &:active, &:focus, &:hover{
     color: var(--accent-color);
-}
+    }
 }
 
 .footer__email {

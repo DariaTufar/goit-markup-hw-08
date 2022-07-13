@@ -5,6 +5,7 @@
     padding-right: 15px;
     justify-content: center;
     margin: 0 auto;
+    
     @include mobile {
         max-width: 480px;
     }
