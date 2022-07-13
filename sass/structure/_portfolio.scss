@@ -3,12 +3,23 @@
 
 .portfolio-filter__list {
     display: flex;
-    justify-content: center;
+    
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: flex-start;
+
+    @include tablet {
+        justify-content: center;
+    }
 }
+
 
 .portfolio-filter__item+.portfolio-filter__item{
     margin-left: 8px;
+    margin-bottom: 20px;
 }
+
+
 
 .portfolio-filter__btn {
     font-weight: 500;
@@ -42,9 +53,12 @@
 .portfolio-examples__list{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+
+    @include desktop { 
     margin-top: 50px;
     justify-content: space-between;
-    
+    }
 }
 
 
