@@ -18,8 +18,11 @@
 
 .portfolio-filter__item+.portfolio-filter__item{
     margin-left: 8px;
-    margin-bottom: 20px;
-     
+    padding-bottom: 15px;    
+
+    @include tablet {
+        padding-bottom: 0px;    
+    } 
 }
 
 .portfolio-filter__btn {
@@ -59,11 +62,15 @@
     align-content: center;
     justify-content: center;
 
-    margin-top: 20px;
-    justify-content: space-between;
 
-    @include desktop { 
-    margin-top: 50px;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    @include tablet {
+        margin-top: 30px;
+        }
+    @include desktop {
+        margin-top: 50px;
     }
 
 }
@@ -98,21 +105,17 @@
     @include desktop {
         width: calc((100% - 60px)/3);
     }   
-
 }
 
 .portfolio-examples__foto {
     display: block;
     height: auto;
-    
+
 }
 
 .portfolio-examples__topwrap{
     position: relative;
     overflow: hidden;
-   
-
-
 }
 
 
