@@ -146,6 +146,10 @@ img {
   }
 }
 
+.header__container {
+  position: relative;
+}
+
 @media screen and (min-width: 768px) {
   .header__bottom-border {
     border-bottom: var(--border-color-header);
@@ -413,7 +417,7 @@ img {
 .mob-menu__open-btn {
   display: block;
   margin-left: auto;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 40px;
@@ -1054,27 +1058,18 @@ img {
 }
 
 .footer {
-  display: flex;
   background-color: #2F303A;
   padding-bottom: 60px;
   flex-direction: column;
 }
 @media screen and (min-width: 480px) {
   .footer {
-    max-width: 480px;
     margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
-    align-content: space-between;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer {
     flex-direction: row;
-    max-width: 1600px;
   }
 }
 
@@ -1364,8 +1359,8 @@ img {
 .portfolio-filter__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
   margin-top: 20px;
+  gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-filter__list {
@@ -1376,16 +1371,6 @@ img {
   .portfolio-filter__list {
     margin-top: 60px;
     align-items: center;
-  }
-}
-
-.portfolio-filter__item + .portfolio-filter__item {
-  margin-left: 8px;
-  padding-bottom: 15px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-filter__item + .portfolio-filter__item {
-    padding-bottom: 0px;
   }
 }
 
@@ -1415,9 +1400,7 @@ img {
 .portfolio-examples__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  gap: 30px;
   justify-content: space-between;
   margin-top: 25px;
 }

@@ -4,11 +4,12 @@
 .portfolio-filter__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    // justify-content: flex-start;
     margin-top: 20px;
+    gap:15px 8px;
 
     @include tablet {
-        justify-content: center;
+        justify-content: center; 
     }
     @include desktop{
         margin-top: 60px;
@@ -17,12 +18,12 @@
 }
 
 .portfolio-filter__item+.portfolio-filter__item{
-    margin-left: 8px;
-    padding-bottom: 15px;    
+    // margin-left: 8px;
+    // padding-bottom: 15px;    
 
-    @include tablet {
-        padding-bottom: 0px;    
-    } 
+    // @include tablet {
+    //     padding-bottom: 0px;    
+    // } 
 }
 
 .portfolio-filter__btn {
@@ -58,9 +59,8 @@
 .portfolio-examples__list{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    gap: 30px;
+    // 
 
 
     justify-content: space-between;

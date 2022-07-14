@@ -1,23 +1,23 @@
 
 //  -------------------ФУТЕР------------------- */
 .footer {
-    display: flex;
+    // display: flex;
     background-color:  #2F303A;
     padding-bottom: 60px;
     flex-direction: column;
      
     
     @include mobile {
-        max-width: 480px;
+        // max-width: 480px;
       margin: 0 auto;
     }
     @include tablet {
-        max-width: 768px;
-        align-content: space-between;
+        // max-width: 768px;
+        // align-content: space-between;
     }
     @include desktop {
         flex-direction: row;
-        max-width: 1600px;
+        // max-width: 1600px;
       
     }
 }

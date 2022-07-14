@@ -21,6 +21,11 @@
     }
     }
 }
+
+.header__container{
+position: relative;
+}
+
 .header__bottom-border{
     @include tablet{
         border-bottom:var(--border-color-header) ;
@@ -274,7 +279,7 @@
 
     display: block;
     margin-left: auto;
-    position:fixed;
+    position:absolute;
     top: 0;
     right: 0;
     width: 40px;
