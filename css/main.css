@@ -463,7 +463,7 @@ img {
   height: 40px;
   cursor: pointer;
   border: none;
-  background-color: none;
+  background-color: transparent;
 }
 
 .mob__close-icon {
