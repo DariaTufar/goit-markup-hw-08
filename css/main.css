@@ -127,6 +127,7 @@ img {
   .header {
     border-bottom: var(--border-color-header);
     max-width: 100%;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 480px) {
@@ -1055,6 +1056,7 @@ img {
 @media screen and (min-width: 480px) {
   .footer {
     max-width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {

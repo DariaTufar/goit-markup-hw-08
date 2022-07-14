@@ -9,6 +9,7 @@
     
     @include mobile {
         max-width: 480px;
+      margin: 0 auto;
     }
     @include tablet {
         max-width: 768px;

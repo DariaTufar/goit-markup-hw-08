@@ -247,14 +247,38 @@
                 <h2 class="team__title"> Наша команда</h2>
                 <ul class="team__list list" >
                     <li class="team__member">
+                        <picture>  
+                            <source
+                                srcset="
+                                ./images/team__card-1.jpg  1x,
+                                ./images/team_card-1_2x.jpg  2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/team__card-1-tab.jpg    1x,
+                            ./images/team__card-1-tab2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+
+                            <source
+                            srcset="
+                            ./images/team_card-1-mob.jpg 1x,
+                            ./images/team_card-1-mob-2x.jpg 2x
+                            "
+                            media="(min-width: 320px)"
+                            />
+                            
                         <img
-                        srcset="
-                        ./images/team__card-1.jpg  1x,
-                        ./images/team__card-1_2x.jpg  2x
-                        " 
-                        src="./images/team__card-1.jpg" alt="фото Игоря Демьяненко"
+                        src="./images/team__card-1.jpg"
+                        alt="фото Игоря Демьяненко"
                         class= "team__member-foto"
-                        width="270"  height="260">
+                        width="270"  height="260"
+                        />
+                    </picture>
+
                         <div class="team__name-position">
                             <h3 class="team__member-name">
                                 Игорь Демьяненко</h3>
@@ -289,14 +313,35 @@
                         </div>
                         
                     <li class="team__member">
+                        <picture>  
+                            <source
+                                srcset="
+                                ./images/team_card-2.jpg  1x,
+                                ./images/team_card-2-2x.jpg  2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/team_card-2-tab.jpg    1x,
+                            ./images/team_card-2-tab2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+
+                            <source
+                            srcset="
+                            ./images/team_card-2-mob.jpg 1x,
+                            ./images/team_card-2-mob2x.jpg 2x
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img
-                        srcset="
-                        ./images/team__card-2.jpg  1x,
-                        ./images/team__card-2_2x.jpg  2x
-                        " 
-                        src="./images/team__card-2.jpg" alt="фото Ольги Репиной"
+                        
+                        src="./images/team_card-2.jpg" alt="фото Ольги Репиной"
                         class= "team__member-foto"
-                        width="270"  height="260">
+                        width="270"  height="260"/>
+                        </picture>
 
                         <div class="team__name-position">
                             <h3  class="team__member-name">
@@ -334,15 +379,37 @@
                     </li>
 
                     <li class="team__member">
+                        <picture>  
+                            <source
+                                srcset="
+                                ./images/team_card-3.jpg  1x,
+                                ./images/team_card-3_2x.jpg  2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/team_card-3-tab.jpg    1x,
+                            ./images/team_card-3-tab2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+
+                            <source
+                            srcset="
+                            ./images/team_card-3-mob.jpg 1x,
+                            ./images/team_card-3-mob2x.jpg 2x
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img
-                        srcset="
-                        ./images/team__card-3.jpg  1x,
-                        ./images/team__card-3_2x.jpg  2x
-                        "  
-                        src="./images/team__card-3.jpg"
+                         
+                        src="./images/team_card-3.jpg"
                         alt="фото Николая Тарасова"
                         class= "team__member-foto"
-                        width="270"  height="260">
+                        width="270"  height="260"/>
+                        </picture>
+
                         <div class="team__name-position">
                             <h3  class="team__member-name">
                                 Николай Тарасов</h3>
@@ -381,14 +448,35 @@
                     </li>
 
                     <li class="team__member">
+                    <picture>  
+                            <source
+                                srcset="
+                                ./images/team_card-4.jpg  1x,
+                                ./images/team_card-4-2x.jpg  2x
+                                "
+                                media="(min-width: 1200px)"
+                            />
+                            <source
+                            srcset="
+                            ./images/team_card-4-tab.jpg    1x,
+                            ./images/team_card-4-tab2x.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                            />
+
+                            <source
+                            srcset="
+                            ./images/team_card-4-mob.jpg 1x,
+                            ./images/team_card-4-mob2x.jpg 2x
+                            "
+                            media="(min-width: 320px)"
+                            />
                         <img 
-                        srcset="
-                        ./images/team__card-4.jpg  1x,
-                        ./images/team__card-4_2x.jpg  2x
-                        " 
-                        src="./images/team__card-4.jpg" alt="фото Михаила Ермакова"
+                        
+                        src="./images/team_card-4.jpg" alt="фото Михаила Ермакова"
                         class= "team__member-foto"
-                        width="270"  height="260">
+                        width="270"  height="260"/>
+                    </picture>
                         <div class="team__name-position">
                             <h3  class="team__member-name">
                                 Михаил Ермаков</h3>
@@ -480,6 +568,7 @@
             </section>
     
         </main>
+
 
     <footer class="footer">
         <div class="container">
