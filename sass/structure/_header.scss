@@ -218,9 +218,8 @@
     align-content: center;
 }
 .contact__icon-envelope{
-
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
 
     @include desktop { 
     margin-right: 10px;
@@ -228,12 +227,10 @@
     height: 12px;
     }
 }
-.contact__icon-email{
-
+.contact__icon-tel{
     width: 10px;
-    height: 16px;
+    height: 14px;
     
- 
     @include desktop { 
     margin-right: 10px;
     width: 10px;
@@ -298,7 +295,6 @@
     }
     .container {
         display: flex;
-       
         justify-content: space-between;
         overflow: auto;
     }
@@ -338,7 +334,7 @@
 	cursor: pointer;
 	outline: inherit;
 }
-}
+
 
 .mob__close-icon{
     width: 18.34px;
