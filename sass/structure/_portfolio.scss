@@ -2,7 +2,11 @@
 // ----------------PORTFOLIO-------------- */
 
 .portfolio-examples {
+    padding: 60px 0;
+    
+    @include desktop{
     padding: 94px 0;
+    }
 }
 
 .portfolio-filter__list {
@@ -20,14 +24,7 @@
         }
 }
 
-.portfolio-filter__item+.portfolio-filter__item{
-    // margin-left: 8px;
-    // padding-bottom: 15px;    
-
-    // @include tablet {
-    //     padding-bottom: 0px;    
-    // } 
-}
+ 
 
 .portfolio-filter__btn {
     font-weight: 500;
@@ -114,7 +111,6 @@
 .portfolio-examples__foto {
     display: block;
     height: auto;
-
 }
 
 .portfolio-examples__topwrap{
@@ -125,7 +121,7 @@
 
 
 .portfolio-examples__toptext{
-    top: 0;
+    top: 1;
     position: absolute;
     height: 100%;
     transform: translateY(100%);
@@ -147,11 +143,22 @@
 }
 
 .portfolio-examples__text {
+ 
     padding: 20px 24px;
+    
     border-left: var(--border-color-1px-solid);
     border-right: var(--border-color-1px-solid);
     border-bottom: var(--border-color-1px-solid);
 }
+.portfolio-examples__text-first{
+    @include tablet {
+        padding-bottom: 56px;
+        }
+    @include desktop {
+        padding-bottom: 20px;
+        }   
+}
+//  change to the interval later
 
 .portfolio-examples__title {
     font-weight: 700;
@@ -169,4 +176,5 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+
 }

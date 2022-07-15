@@ -36,7 +36,7 @@
     }
     @include tablet {
         
-        padding-left: 76px;
+        margin-left: 76px;
     }
 
     @include desktop {
@@ -127,12 +127,12 @@
         flex-direction: column;
         align-content: center;
         align-items: center; 
-        margin-top: 60px;
+        // margin-top: 60px;
         margin-bottom: 60px;
     }
     @include tablet{ 
         padding-right: 89px;  
-        margin-top: 65px;  
+        // margin-top: 65px;   - gave 60 px to footer
         }
 // write  interval  tablet only padding right 89px
     @include desktop {
@@ -183,21 +183,18 @@
 
 .subscription{
     
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center; 
+    text-align: center; 
     
     @include tablet {
-        padding-top: 60px;
+        margin-top: 60px;
         padding-right: 0;
     }
 
     @include desktop { 
-        padding-top: 72px;
-        padding-left: 93px;
+        margin-top: 72px;
+        margin-left: 93px;
         align-items: flex-start;
-        padding-right: 0px;
+        margin-right: 215px;
        
         }
     &::placeholder{

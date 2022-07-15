@@ -28,12 +28,12 @@
 </head>
 
 <body>
-    <header class="header header__bottom-border "> 
-        <div class="container">
+    <header class="header   "> 
+        <div class="container header__container header__bottom-border">
 
             <div class=" main-nav">
                 <nav class="nav">
-                    <a  href="#" class="logo nav__logo" lang="en"> Web<span class="nav__logo--blueblack">Studio</span>     
+                    <a  href="./index.html" class="logo nav__logo" lang="en"> Web<span class="nav__logo--blueblack">Studio</span>     
                     </a>
                     <ul class="menu list">
                         <li class="menu__item "> <a   href ="./index.html"  class="menu__link link"  >Студия </a> </li>
@@ -41,6 +41,7 @@
                         <li class="menu__item"> <a   href="#" class="menu__link link">Контакты </a> </li>
                     </ul>
                 </nav>
+            </div>
 
                 <ul class="contact list">
                     <li class="contact__item"><a href="mailto:info@devstudio.com" class="contact__link link">
@@ -55,77 +56,70 @@
                         </svg>
                         +38 096 111 11 11</a></li>          
                 </ul>
+        </div>
+
+            <button type="button" class="button mob-menu__open-btn">
+                <svg class="mob-menu__open-icon"  width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu_24px" >
+                    </use>
+                </svg>
+            </button>
+            <div class="mob-menu is-hidden">
+                <div class="mob-menu__top">
+
+                    <button type="button" class="mob-menu__close-btn">
+                        <svg class="mob__close-icon"  width="18.34" height="18.34">
+                        <use href="./images/icons.svg#icon-close_24px" >
+                        </use>
+                    </svg></button>
+
+
+                    <ul class="mob-menu__list list">
+                        <li class="mob-menu__item  "> 
+                            <a   href ="./index.html"  class="mob-menu__link link"  >Студия </a> </li>
+                        <li class="mob-menu__item mob-menu__current">
+                            <a   href="./portfolio.html" class="mob-menu__link link" >Портфолио </a> </li>
+                        <li class="mob-menu__item"> 
+                            <a   href="#" class="mob-menu__link link">Контакты </a> </li>
+                    </ul>
+                </div>
+                <div class="mob-menu__bottom">
+                    <ul class="mob-menu__contact list">
+                        <li class="mob-contact__item mob-menu__tel">
+                            <a href="tel:+380961111111" class="mob-contact__link link">
+                                +38 096 111 11 11</a>
+                        </li>  
+                        
+                        <li class="mob-contact__item mob-menu__email">
+                            <a href="mailto:info@devstudio.com" class="mob-contact__link link">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    <ul class="mob-soc__list list">
+                        <li class="mob-soc__item">
+                            <a href="" class="mob-soc__link link">Instagram</a> 
+                        </li>
+                    
+                        <li class="mob-soc__item">
+                            <a href="" class="mob-soc__link link">Twitter</a> 
+                        </li>
+                            
+                    
+                        <li class="mob-soc__item">
+                            <a href="" class="mob-soc__link link">Facebook</a> 
+                        </li>
+                    
+                        <li class="mob-soc__item">
+                            <a href="" class="mob-soc__link link">LinkedIn</a> 
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-<div class="container">
-        <button type="button" class="button mob-menu__open-btn">
-            <svg class="mob-menu__open-icon"  width="24" height="24">
-                <use href="./images/icons.svg#icon-menu_24px" 
-               >
-                </use>
-            </svg>
-        </button>
-    </div>
-</div>
-
-    <div class="container">
-    <div class="mob-menu is-hidden">
-    <div class="mob-menu__top">
-
-        <button type="button" class="mob-menu__close-btn">
-            <svg class="mob__close-icon"  width="18.34" height="18.34">
-            <use href="./images/icons.svg#icon-close_24px" 
-           >
-            </use>
-        </svg></button>
-
-        
-  
-
-        <ul class="mob-menu__list list">
-            <li class="mob-menu__item  "> 
-                <a   href ="./index.html"  class="mob-menu__link link"  >Студия </a> </li>
-            <li class="mob-menu__item mob-menu__current">
-                <a   href="./portfolio.html" class="mob-menu__link link" >Портфолио </a> </li>
-            <li class="mob-menu__item"> 
-                <a   href="#" class="mob-menu__link link">Контакты </a> </li>
-        </ul>
-        </div>
-        <div class="mob-menu__bottom">
-        <ul class="mob-menu__contact list">
-            <li class="mob-contact__item mob-menu__tel">
-                <a href="tel:+380961111111" class="mob-contact__link link">
-                    +38 096 111 11 11</a>
-            </li>  
-            
-            <li class="mob-contact__item mob-menu__email">
-                <a href="mailto:info@devstudio.com" class="mob-contact__link link">
-                    info@devstudio.com</a>
-            </li>
-        </ul>
-        
-        
-        <ul class="mob-soc__list list">
-            <li class="mob-soc__item">
-                <a href="" class="mob-soc__link link">Instagram</a> 
-            </li>
-        
-            <li class="mob-soc__item">
-                <a href="" class="mob-soc__link link">Twitter</a> 
-            </li>
-                
-        
-            <li class="mob-soc__item">
-                <a href="" class="mob-soc__link link">Facebook</a> 
-            </li>
-        
-            <li class="mob-soc__item">
-                <a href="" class="mob-soc__link link">LinkedIn</a> 
-            </li>
-        </ul>
-        </div>
-    </div>
-        </header>
+     
+    </header>
     <main>
 
         <section class="portfolio-examples ">
@@ -144,9 +138,8 @@
 
             <ul class="portfolio-examples__list listr">
                 <li class="portfolio-examples__item"> 
-                    <a href="#" class="portfolio-examples__link link">   
+                    <a href="#" class="portfolio-examples__link link">    
                         <div class="portfolio-examples__topwrap">
-
                             <picture>  
                                 <source
                                 srcset="
@@ -181,9 +174,9 @@
                                 Все это позволит посетителю получить исчерпывающие сведения 
                                 о компании или частном лице.</p>
                         </div>
-                        <div class="portfolio-examples__text">
+                        <div class="portfolio-examples__text portfolio-examples__text-first">
                             <h2 class="portfolio-examples__title"> Технокряк </h2> 
-                            <p class="portfolio-examples__descr">Веб-сайт </p>
+                            <p class="portfolio-examples__descr  ">Веб-сайт </p>
                         </div> 
                     </a> 
                 </li>
@@ -219,6 +212,7 @@
                                 alt="фото постера два баскетболиста с мячом"
                                 width="370"  height="294"/>
                                 </picture>
+                                
                             <p class="portfolio-examples__toptext">
                                 Ресурс предлагает комплексные предложения 
                                 с разным уровнем функционала и сервисов. 
@@ -552,7 +546,7 @@
             <div class="footer-top-wrap">
                 <div class="footer-contacts-join">
                     <div class="footer-contact-wrap">
-                        <a class="footer__logo" href=".">
+                        <a class="footer__logo" href="./index.html">
                             Web<span class="footer__logo-bluewhite">Studio</span> 
                         </a>               
                         <address>
