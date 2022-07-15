@@ -1200,17 +1200,18 @@ img {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    margin-top: 60px;
     margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer-join-us-wrap {
     padding-right: 89px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-join-us-wrap {
-    margin-top: 72px;
     padding-right: 0;
   }
 }
@@ -1265,7 +1266,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .subscription {
-    margin-top: 72px;
+    margin-top: 0px;
     margin-left: 93px;
     align-items: flex-start;
     margin-right: 215px;
@@ -1292,6 +1293,12 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__motto {
+    text-align: start;
+    margin-top: 12px;
+  }
 }
 
 .subscription__form {

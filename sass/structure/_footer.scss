@@ -127,17 +127,19 @@
         flex-direction: column;
         align-content: center;
         align-items: center; 
-        // margin-top: 60px;
+        margin-top: 60px;
         margin-bottom: 60px;
     }
     @include tablet{ 
-        padding-right: 89px;  
+        padding-right: 89px;
+        margin-top: 0;  
         // margin-top: 65px;   - gave 60 px to footer
         }
 // write  interval  tablet only padding right 89px
     @include desktop {
-        margin-top: 72px;
+        // margin-top: 72px;
         padding-right: 0;
+        
     }
 }
 
@@ -191,7 +193,7 @@
     }
 
     @include desktop { 
-        margin-top: 72px;
+        margin-top: 0px;
         margin-left: 93px;
         align-items: flex-start;
         margin-right: 215px;
@@ -222,6 +224,10 @@
     color: var(--primary-white-color);
 
     margin-bottom: 20px;
+    @include desktop {
+        text-align: start;
+        margin-top: 12px;
+    }
 }
 
 .subscription__form{
