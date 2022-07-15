@@ -1356,10 +1356,13 @@ img {
   }
 }
 
+.portfolio-examples {
+  padding: 94px 0;
+}
+
 .portfolio-filter__list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
   gap: 15px 8px;
 }
 @media screen and (min-width: 768px) {
@@ -1369,7 +1372,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .portfolio-filter__list {
-    margin-top: 60px;
     align-items: center;
   }
 }
@@ -1402,7 +1404,7 @@ img {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-examples__list {
