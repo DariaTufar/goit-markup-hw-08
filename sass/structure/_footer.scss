@@ -5,25 +5,19 @@
     background-color:  #2F303A;
     padding-bottom: 60px;
     flex-direction: column;
-     
+    padding-top: 60px;
     
     @include mobile {
-        // max-width: 480px;
-      margin: 0 auto;
+    margin: 0 auto;
     }
     @include tablet {
-        // max-width: 768px;
-        // align-content: space-between;
     }
     @include desktop {
         flex-direction: row;
-        // max-width: 1600px;
-      
     }
 }
 
 .footer-contacts-join{
-    display: block;
 
     @include tablet {
     display: flex;
@@ -51,7 +45,7 @@
 }
 
 .footer__logo {
-    padding-top: 60px;
+    
     display: inline-block;
     font-family: 'Raleway';
     font-weight: 700;
@@ -66,7 +60,7 @@
     text-decoration: none;
     color: var(--accent-color);
     margin-bottom: 20px;
-    // margin-top: 20px;
+    
 }
 
 .footer__logo-bluewhite{
@@ -123,7 +117,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    padding-bottom: 20px;
+    // padding-bottom: 20px;    there is top 
 }
 
 .footer-join-us-wrap {
@@ -132,16 +126,16 @@
         flex-direction: column;
         align-content: center;
         align-items: center; 
-        padding-top: 60px;
-        padding-bottom: 60px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     @include tablet{ 
         padding-right: 89px;  
-        padding-top: 65px;  
+        margin-top: 65px;  
         }
 // write  interval  tablet only padding right 89px
     @include desktop {
-        padding-top: 72px;
+        margin-top: 72px;
         padding-right: 0;
     }
 }
