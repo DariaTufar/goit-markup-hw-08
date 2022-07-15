@@ -117,7 +117,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    // padding-bottom: 20px;    there is top 
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .footer-join-us-wrap {
@@ -144,8 +145,7 @@
 
 .company-soc__list{
     display: flex;
-    margin-top: 20px;
-
+    justify-content: center;
 }
 
 .company-soc__item{
