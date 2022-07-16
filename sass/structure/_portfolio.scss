@@ -1,5 +1,4 @@
- 
-// ----------------PORTFOLIO-------------- */
+//   ----------------PORTFOLIO-------------- */
 
 .portfolio-examples {
     padding: 60px 0;
@@ -11,14 +10,12 @@
 .portfolio-filter__list {
     display: flex;
     flex-wrap: wrap;
-
     gap:15px 8px;
 
     @include tablet {
         justify-content: center; 
     }
     @include desktop{
-        
         align-items: center;
         }
 }
@@ -131,7 +128,7 @@
 }
 .portfolio-examples__item:hover .portfolio-examples__toptext  {
     transform: translateY(0);
-}
+} 
 
 .portfolio-examples__text {
 
@@ -169,3 +166,4 @@
     color: var(--primary-text-color);
 
 }
+ 
