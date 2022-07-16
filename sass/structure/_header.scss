@@ -276,6 +276,9 @@ display: flex;
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
     @include tablet{
         display: none;
