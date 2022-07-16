@@ -149,9 +149,10 @@ display: flex;
 
 
 .contact{
+    align-items: flex-start;
     @media screen and (max-width: 767px) {
         display: none;
-      }
+    }
     @include tablet {
         display: flex;
         flex-direction: column;
@@ -159,7 +160,7 @@ display: flex;
         align-content: flex-start;
         align-items: flex-start;
     }
-        @include desktop {
+    @include desktop {
         flex-direction: row;
         justify-content: right;
     }
@@ -167,16 +168,22 @@ display: flex;
         padding-top: 21px;
         padding-bottom: 21px;    
     }
-
     &.list{
         display: flex;
         margin-left: auto;
         align-items: flex-start;
-        @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
             display: none;
         }
     }
 }
+
+.contact.list {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-start;
+}
+
 .contact__wrap{
     @include tablet {
         display: flex;}
